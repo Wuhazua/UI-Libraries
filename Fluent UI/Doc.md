@@ -204,6 +204,37 @@ end)
 Dropdown:SetValue("four")
 ```
 
+## Multi Dropdowns
+```lua
+local MultiDropdown = Tab:AddDropdown("MultiDropdown", {
+   Title = "Dropdown",
+   Description = "You can select multiple values.",
+   Values = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen"},
+   Multi = true,
+   Default = {"seven", "twelve"},
+})
+```
+
+## Event Handling
+```lua
+MultiDropdown:OnChanged(function(Value)
+    local Values = {}
+    for Value, State in next, Value do
+        table.insert(Values, Value)
+    end
+    print("Mutlidropdown changed:", table.concat(Values, ", "))
+end)
+```
+
+## Changing Value
+```
+MultiDropdown:SetValue({
+   three = true,
+   five = true,
+   seven = false
+})
+```
+
 ## Creating ColorPickers
 ```lua
 local Colorpicker = Tab:AddColorpicker("Colorpicker", {
