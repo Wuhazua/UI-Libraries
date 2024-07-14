@@ -1,4 +1,4 @@
-## Youtube Showcase:
+## YouTube Showcase:
 https://www.youtube.com/watch?v=QOFKINaYCLs
 
 ### Picture:
