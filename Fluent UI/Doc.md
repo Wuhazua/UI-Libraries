@@ -75,7 +75,7 @@ Window:Dialog({
 https://lucide.dev/icons/
 
 ## Creating Tabs
-```
+```lua
 -- Fluent provides Lucide Icons, they are optional
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "" }),
