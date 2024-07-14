@@ -53,7 +53,7 @@ sections.Section1:AddToggle({
 ```
 
 ## Create Button
-```
+```lua
 sections.Section1:AddButton({
 	enabled = true,
 	text = "Button1",
